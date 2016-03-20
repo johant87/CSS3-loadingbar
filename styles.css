@@ -2,6 +2,23 @@ body {
   background-color: #2d2d2d;
 }
 
+h1 {
+  text-align: center;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #dadada;
+}
+.wrapper {
+  margin-top: 20%;
+}
+.middle-wrapper {
+  width: 495px;
+  margin: 0 auto;
+}
+
+.btn-wrapper {
+  width: 215px;
+  margin: 0 auto;
+}
 .loading-bar {
     background-color: #1a1a1a;
     height: 25px;
@@ -23,6 +40,28 @@ body {
 
 .red span {
     background-color: #F1615E ;
+}
+.loading-bar2 {
+    background-color: #1a1a1a;
+    height: 25px;
+    padding: 5px;
+    float: left;
+    width: 475px;
+    margin: 20px 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+}
+
+.loading-bar2 span {
+    display: inline-block;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    transition: width 1000ms ease-in-out;
+}
+
+.blue span {
+    background-color: #4859a2 ;
 }
 
 
@@ -49,4 +88,60 @@ body {
 .green span {
     background-color: #6ce05c ;
     box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+}
+
+#clickme {
+  float: left;
+  margin: 50px 5px;
+  height: 35px;
+  width: 80px;
+	color: #dadada;
+	display:block;
+  font-size: 14px;
+  position:relative;
+	text-decoration:none;
+	border-radius:5px;
+	border:solid 1px #D94E3B;
+	background:#cb3b27;
+	text-align:center;
+	transition: all 0.1s;
+}
+#clickme:focus {outline:0;}
+#clickme:active {
+  position:relative;
+  font-size: 13px;
+  box-shadow:inset 0 0 10px #000000;
+  text-decoration: none;
+}
+
+#clickme:hover {
+  position:relative;
+  text-decoration: none;
+  background: #f25b46;
+}
+
+.perc-btn {
+  width: 50px;
+  height: 20px;
+  color: #dadada;
+  font-size: 12px;
+	text-decoration:none;
+	border-radius:5px;
+	border:solid 1px #6575b7;
+	background:#4859a2;
+	text-align:center;
+	transition: all 0.1s;
+}
+.perc-btn:active {
+  position:relative;
+  font-size: 11px;
+  box-shadow:inset 0 0 5px #000000;
+  text-decoration: none;
+}
+.perc-btn:focus {outline:0;}
+
+.perc-btn:hover {
+  position:relative;
+  text-decoration: none;
+  background: #6575b7;
 }

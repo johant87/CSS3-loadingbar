@@ -14,12 +14,28 @@
 
 </head>
 <body>
-  <button id="clickme">click</button>
-  <div class="loading-bar red">
-   <span id="loader" style="width: 0%"></span>
-  </div>
-  <div class="check">
-    <span></span>
+  <div class="wrapper">
+    <div class="middle-wrapper">
+      <h1>CSS3 Loading bars</h1>
+      <button id="clickme">Click me!</button>
+      <div class="loading-bar red">
+       <span id="loader" style="width: 0%"></span>
+      </div>
+      <div class="check">
+        <span></span>
+      </div>
+    </div>
+    <div class="middle-wrapper">
+      <div class="loading-bar2 blue">
+       <span id="loader2" style="width: 25%"></span>
+      </div>
+        <div class="btn-wrapper">
+            <button class="perc-btn" id="go-25">25%</button>
+            <button class="perc-btn" id="go-50">50%</button>
+            <button class="perc-btn" id="go-75">75%</button>
+            <button class="perc-btn" id="go-100">100%</button>
+        </div>
+    </div>
   </div>
 
 </body>
@@ -28,6 +44,21 @@
   $("#clickme").one("click", function() {
     $( "#loader" ).css( "width", "+=100%" );
     setTimeout(function(){ $( ".check" ).addClass( "green" ); }, 1000);
+  });
+
+  $("#go-25").on("click", function() {
+    $( "#loader2" ).css( "width", "25%" );
+  });
+
+  $("#go-50").on("click", function() {
+    $( "#loader2" ).css( "width", "50%" );
+  });
+  $("#go-75").on("click", function() {
+    $( "#loader2" ).css( "width", "75%" );
+  });
+
+  $("#go-100").on("click", function() {
+    $( "#loader2" ).css( "width", "100%" );
   });
 </script>
 </html>
